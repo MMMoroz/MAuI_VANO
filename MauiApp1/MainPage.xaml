@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+    <Grid BackgroundColor="#999">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="History" Text=" "  Grid.Row="1" FontSize="20"/>
+        <Label x:Name="Vvod"  Grid.Row="2" Text="0" Grid.RowSpan="5" FontSize="15"/>
+        <Button Grid.Row="3" Grid.Column="0" Text="Del" Grid.RowSpan="1" Clicked="Button_Clicked_Del"/>
+        <Button Grid.Row="3" Grid.Column="1" Text="CE" Grid.RowSpan="1" Clicked="Button_Clicked_CE"/>
+        <Button Grid.Row="3" Grid.Column="2" Text="C" Grid.RowSpan="1" Clicked="Button_Clicked_C"/>
+        <Button Grid.Row="3" Grid.Column="3" Text="+/-" Grid.RowSpan="1" Clicked="Button_Clicked_Symbols"/>
+        <Button Grid.Row="3" Grid.Column="4" Text="√" Grid.RowSpan="1" Clicked="Button_Coren_Clicked"/>
+
+        <Button Grid.Row="5" Grid.Column="3" Text="/" Grid.RowSpan="2" Clicked="Button_Clicked_Symbols"/>
+        <Button Grid.Row="5" Grid.Column="4" Text="%" Grid.RowSpan="2" Clicked="Button_Percent_Clicked"/>
+
+        <Button Grid.Row="7" Grid.Column="3" Text="*" Grid.RowSpan="2" Clicked="Button_Clicked_Symbols"/>
+        <Button Grid.Row="7" Grid.Column="4" Text="1/x" Grid.RowSpan="2" Clicked="Button_Clicked_Symbols"/>
+
+        <Button Grid.Row="9" Grid.Column="3" Text="-" Grid.RowSpan="2" Clicked="Button_Clicked_Symbols"/>
+        <Button Grid.Row="9" Grid.Column="4" Text="=" Grid.RowSpan="3" Clicked="ClickResult"/>
+
+        <Button Grid.Row="11" Grid.Column="3" Text="+" Clicked="Button_Clicked_Symbols"/>
+        <Button Grid.Row="11" Grid.Column="2" Text="." Clicked="Button_Clicked_Symbols"/>
+
+        <Button Grid.Row="5" Grid.Column="0" Text="7" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+        <Button Grid.Row="5" Grid.Column="1" Text="8" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+        <Button Grid.Row="5" Grid.Column="2" Text="9" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+
+        <Button Grid.Row="7" Grid.Column="0" Text="4" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+        <Button Grid.Row="7" Grid.Column="1" Text="5" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+        <Button Grid.Row="7" Grid.Column="2" Text="6" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+
+        <Button Grid.Row="9" Grid.Column="0" Text="1" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+        <Button Grid.Row="9" Grid.Column="1" Text="2" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+        <Button Grid.Row="9" Grid.Column="2" Text="3" Grid.RowSpan="2" Clicked="Button_Clicked"/>
+
+        <Button Grid.Row="11" Grid.Column="0" Text="0" Grid.ColumnSpan="2" Clicked="Button_Clicked"/>
+    </Grid>
+</ContentPage>
